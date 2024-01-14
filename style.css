@@ -1,0 +1,329 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    font-family: 'Wire One', sans-serif;
+}
+
+.container{
+    width: 90%;
+    margin: 100px auto;
+}
+
+.non{
+background-color: #000;
+color: #fff;
+
+}
+.nin{
+color: #fff;
+}
+
+.nmn{
+color: #000;
+}
+
+
+
+    
+
+
+
+/* navber */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    width: 95%;
+    position:fixed;
+    padding:7px 60px;
+    z-index: 2;
+    background-color:#fff;
+    box-shadow:0 2px 8px rgba(0, 0, 0, 0.2 );
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    transition: 0.5s;
+    letter-spacing: 4px;
+}
+
+nav a:hover{
+background-color: #ddd;
+border-bottom:1px solid #000;
+}
+nav a span{
+    font-weight: bold;
+
+}
+nav ul{
+list-style: none;
+display: flex;
+}
+nav .menu{
+    font: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+
+nav .moon{
+display: none;
+}
+
+
+
+nav ul li a{
+text-decoration: none;
+color: black;
+font-size: 18px;
+padding:10px;
+letter-spacing: 4px;
+
+}
+nav ul li a:hover{
+    background-color: #ddd;
+    transition: 0.1s;
+}
+
+
+/* header */
+header{
+    background-image: url(imgs/header.jpg);
+    max-width: 100%;
+    height: 95vh;
+    background-size: cover;
+    position: relative;
+}   
+header h2{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-size: 40px;
+    color: #fff;
+}
+header h2 span{
+background-color: black;
+padding: 10px;
+opacity: 0.5;
+}
+
+
+/* projects */
+
+.projects h2{
+margin-bottom: 50px;
+}
+.projects-content{
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+.projects-content .project{
+width: 24%;
+position: relative;
+}
+.projects-content .project img{
+    width: 100%;
+}
+.projects-content .project p{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+}
+
+/* about */
+.about .main-p{
+    margin: 30px 0;
+    line-height: 1.5;
+
+}
+.about-content{
+    display: flex;
+    gap: 10px;
+} 
+.about-content .char{
+    width: 24%;
+}
+.about-content .char img{
+    width: 100%;
+}
+.about-content .char >*{
+    margin-top: 10px;
+}
+.about-content .char h4{
+    opacity: 0.5;
+    line-height: 1.5;
+}
+.about-content .char button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.about-content .char button:hover{
+background-color:#ddd;
+}
+.contact >*{
+    margin: 20px  8px;
+}
+.contact form input{
+width: 93%;
+margin-top: 10px;
+padding: 10px;
+outline: none;
+border: none;
+border-bottom: 1px solid gray;
+}
+.contact button{
+background-color: #000;
+color: white;
+font-size: 15px;
+padding: 10px;
+border: none;
+cursor: pointer;
+}
+.contact button:hover{
+background-color:#ccc;
+color:#000;
+transform: 2ss;
+}
+
+/* map */
+.map iframe{
+    width: 100%;
+    height: 100vh;
+}
+/* footer */
+footer{
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    
+}
+footer h5{
+    color: #fff;
+    bottom: 10px;
+}
+footer a{
+    color: #fff;
+}
+
+/* media query telephone */
+
+@media screen and (max-width : 480px) {
+    *{
+        margin: 0;
+        padding: 0;
+        }
+        body{
+            font-family: 'Poppins', sans-serif;
+             overflow-x:hidden;
+        }
+        .container{
+            width: 90%;
+            margin: 100px auto;
+        }
+        
+        /* navber */
+        
+        nav{
+            position: relative;
+            padding: 20px;
+        }
+        nav a{
+            font-size: 18px;
+        }
+        nav ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        line-height: 3.5;
+        left: 250px;
+        top: 80px;
+        padding: 20px;
+        background-color: #fff;
+        display: none;
+        }
+
+        
+        nav .menu{
+            display: flex;
+            position: relative;
+            left: 50px;
+            font-size: 25px;
+            gap: 15px;
+        }
+        nav .moon{
+        display: flex;
+        font-size: 25px;
+        cursor: pointer;
+        }
+
+       .open{
+       display: flex;
+       }
+        
+        
+   
+
+        /* header */ 
+        header h2{
+        left: 10%;
+        font-size: 35px;
+        }
+
+        /* projects */
+        
+        
+        .projects-content{
+        flex-direction: column;
+        }
+        .projects-content .project{
+        width: 100%;
+        }
+        .projects-content .project img{
+            width: 100%;
+        }
+
+        /* about */
+        .about .main-p{
+            text-align: center;
+            width: 90%;
+        }
+        .about-content{
+        flex-direction: column;
+        } 
+        .about-content .char{
+            width: 100%;
+        }
+        .about-content .char img{
+            width: 100%;
+            background-position: calc(center);
+            background-size: cover;
+        }
+
+
+        /* footer */
+
+        footer h5{
+            color: #fff;
+            bottom: 10px;
+            line-height: 1.5;
+        }
+    
+        /* media query taplet and ipad */
+
+    
+}
